@@ -11,9 +11,14 @@
 <body>
     <h1> See All The Pokemon!</h1>
     <ul>
-        <%data.map((pokemon, i) => {%>
+        <%data.map((pokemon, i)=> {%>
             <li>
+
+                <a href=<%=`/pokemon/${i}`%>> Click Me! </a>
+                <br>
                 <%= pokemon.name.charAt(0).toUpperCase()+pokemon.name.slice(1) %>
+                    <img src="<%=`${pokemon.img}.jpg`%>" alt="poke">
+
             </li>
             <%})%>
     </ul>
