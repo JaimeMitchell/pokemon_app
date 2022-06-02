@@ -12,9 +12,9 @@
     <h1> Gotta Catch 'Em All!</h1>
     <h2></h2>
                 <h2>
-                    <%= data[index].name.charAt(0).toUpperCase()+data[index].name.slice(1)%>
+                    <%= data.name.charAt(0).toUpperCase()+data.name.slice(1)%>
                 </h2>
-                <img src="<%=`${data[index].img}.jpg`%>" alt="poke">
+                <img src="<%=`${data.img}.jpg`%>" alt="poke">
                 <br>
                 <a href="/pokemon">Go Back!</a>
 </body>

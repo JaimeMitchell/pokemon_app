@@ -27,10 +27,10 @@ app.get('/pokemon', (req, res) => {
 })
 // Inside your server.js, add a new get route /pokemon/:id, That will res.send(req.params.id);
 app.get('/pokemon/:id', (req, res) => {
-   
-   res.render('show', { data: pokemon, index: req.params.id }) 
+
+    res.render('show', { data: pokemon[req.params.id] })
 })
-    
+
 //set up port
 app.listen(PORT, () => {
     console.log(`PORT ${PORT} is listening`)
